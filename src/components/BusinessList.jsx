@@ -1,4 +1,5 @@
 import BusinessCard from "./BusinessCard.jsx";
+import "./BusinessList.css"
 
 export default function BusinessList() {
   return (
