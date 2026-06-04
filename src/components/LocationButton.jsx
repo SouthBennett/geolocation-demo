@@ -1,7 +1,20 @@
 import "./LocationButton.css"
 
-export default function LocationButton() {
+/**
+ * LocationButton Component
+ * 
+ * Responsibility:
+ * Requests the user's location using the browser's Geolocation API.
+ * 
+ * Props
+ * - setLocation: Updates the location state in App.jsx
+ * - setError: Updates the error state in App.jsx
+ * @returns 
+ */
+export default function LocationButton({setLocation, setError}) {
   return (
-    <h1>This is the Location Button component!</h1>
-  )
+    <button>
+      Use My Location
+    </button>
+  );
 }

@@ -1,3 +1,4 @@
+import { useState } from "react" 
 import Header from "./components/Header.jsx"
 import LocationButton from "./components/LocationButton.jsx"
 import CategoryButtons from "./components/CategoryButtons.jsx"
@@ -5,10 +6,21 @@ import BusinessList from "./components/BusinessList.jsx"
 import Map from "./components/Map.jsx"
 
 export default function App() {
+
+  // Stores the user's coordinates once location is granted
+  const [location, setLocation] = useState(null);
+
+  //Stores any geolocation-related error message
+  const [error, setError] = useState("");
+
   return (
     <main>
       <Header />
-      <LocationButton />
+      {/* Allows users to request their current location */}
+      <LocationButton 
+        setLocation={setLocation}
+        setError={setError}  
+      />
       <CategoryButtons />
       <BusinessList />
       <Map />
