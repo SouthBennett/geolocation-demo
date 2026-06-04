@@ -21,6 +21,16 @@ export default function App() {
         setLocation={setLocation}
         setError={setError}  
       />
+
+      {/* Display a success message when location data exists */}
+      {location && (<p>Location retrieved successfully!</p>)}
+
+      {/* Display geolocation errors */}
+      {error && (<p>{error}</p>)}
+
+      <pre>
+        {JSON.stringify(location, null, 2)}
+      </pre>
       <CategoryButtons />
       <BusinessList />
       <Map />
