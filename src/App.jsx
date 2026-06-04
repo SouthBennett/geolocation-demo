@@ -39,6 +39,7 @@ export default function App() {
         selectedCategory={selectedCategory}
         setSelectedCategory={setSelectedCategory}
       />
+      <p>Selected Category: {selectedCategory}</p>
       <BusinessList />
       <Map />
     </main>

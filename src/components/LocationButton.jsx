@@ -7,8 +7,8 @@ import "./LocationButton.css"
  * Requests the user's location using the browser's Geolocation API.
  * 
  * Props
- * - setLocation: Updates the location state in App.jsx
- * - setError: Updates the error state in App.jsx
+ * - setLocation: Updates the location state/
+ * - setError: Updates the error state.
  * @returns 
  */
 export default function LocationButton({setLocation, setError}) {
