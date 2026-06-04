@@ -13,6 +13,9 @@ export default function App() {
   //Stores any geolocation-related error message
   const [error, setError] = useState("");
 
+  // Stores the currently selected buisness category
+  const [selectedCategory, setSelectedCategory] = useState("");
+  
   return (
     <main>
       <Header />
@@ -31,7 +34,11 @@ export default function App() {
       <pre>
         {JSON.stringify(location, null, 2)}
       </pre>
-      <CategoryButtons />
+      {/* Allows the user to choose a business category */}
+      <CategoryButtons 
+        selectedCategory={selectedCategory}
+        setSelectedCategory={setSelectedCategory}
+      />
       <BusinessList />
       <Map />
     </main>
