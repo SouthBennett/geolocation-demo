@@ -27,7 +27,13 @@ export default function CategoryButtons({selectedCategory, setSelectedCategory})
       {categories.map((category) => (
         <button 
           key={category}
-          onClick={() => setSelectedCategory(category)}
+          onClick={() => {setSelectedCategory(category); console.log(category);}}
+          
+          className={
+            selectedCategory === category
+              ? "category-button selected"
+              : "category-button"
+          }
         >
           {category}
         </button>
