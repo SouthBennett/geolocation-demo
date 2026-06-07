@@ -4,6 +4,47 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #1f2937;
+}
+
+.app {
+  width: min(1000px, 92%);
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+.hero-section,
+.search-section {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.success-message {
+  color: #15803d;
+  font-weight: bold;
+}
+
+.error-message {
+  color: #b91c1c;
+  font-weight: bold;
+}
+
+.loading-message,
+.empty-message,
+.selected-category {
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+.location-box {
+  background: #111827;
+  color: #e5e7eb;
+  padding: 16px;
+  border-radius: 12px;
+  overflow-x: auto;
 }

@@ -22,7 +22,7 @@ export default function CategoryButtons({selectedCategory, setSelectedCategory})
   ];
 
   return (
-    <div>
+    <div className="category-container">
       {/* Map each category to a button */}
       {categories.map((category) => (
         <button 

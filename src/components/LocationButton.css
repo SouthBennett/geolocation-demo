@@ -1,0 +1,33 @@
+.location-button {
+    display: block;
+  
+    margin: 0 auto 20px auto;
+  
+    padding: 14px 28px;
+  
+    border: none;
+    border-radius: 10px;
+  
+    background-color: #2563eb;
+  
+    color: white;
+  
+    font-size: 1rem;
+    font-weight: 600;
+  
+    cursor: pointer;
+  
+    transition:
+      background-color 0.2s ease,
+      transform 0.2s ease;
+  }
+  
+  .location-button:hover {
+    background-color: #1d4ed8;
+  
+    transform: translateY(-2px);
+  }
+  
+  .location-button:active {
+    transform: translateY(0);
+  }

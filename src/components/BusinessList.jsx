@@ -1,12 +1,16 @@
 import BusinessCard from "./BusinessCard.jsx";
 import "./BusinessList.css"
 
-export default function BusinessList() {
+export default function BusinessList({ businesses }) {
   return (
-    <>
-      <BusinessCard />
-      <h3>This is the Business List component!</h3>
-    </>
+    <div className="business-list">
+      {businesses.map((business) => (
+        <BusinessCard
+          key={business.id}
+          business={business}
+        />
+      ))}
+    </div>
     
   )
 }

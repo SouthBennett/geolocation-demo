@@ -46,7 +46,9 @@ export default function LocationButton({setLocation, setError}) {
     );
   }
   return (
-    <button onClick={handleLocationRequest}>
+    <button
+    className="location-button"
+    onClick={handleLocationRequest}>
       Use My Location
     </button>
   );
