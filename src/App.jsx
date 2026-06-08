@@ -130,11 +130,8 @@ export default function App() {
           <p className="empty-message">No places found.</p>
         )}
 
-        {/* Displays nearby businesses and their distances from the user */}
-        <BusinessList 
-          businesses={businesses} 
-          location={location}
-        />
+        {/* Displays nearby businesses from the user */}
+        <BusinessList businesses={businesses} />
       <Map />
       </section>
     </main>

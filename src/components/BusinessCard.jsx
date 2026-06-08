@@ -1,6 +1,6 @@
 import "./BusinessCard.css"
 
-export default function BusinessCard({business, location}) {
+export default function BusinessCard({business}) {
   return (
     <div className="business-card">
     <h3>{business.tags?.name || "Unnamed place"}</h3>
@@ -15,7 +15,6 @@ export default function BusinessCard({business, location}) {
 
     <p>Latitude: {business.lat}</p>
     <p>Longitude: {business.lon}</p>
-    <p>User Latitude: {location?.latitude}</p>
   </div>
   )
 }

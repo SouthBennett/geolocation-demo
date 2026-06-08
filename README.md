@@ -74,7 +74,6 @@ As a user, I want nearby places displayed in a readable format.
 
   * Business name
   * Category
-  * Distance (if available)
 * Cards are generated dynamically from API data.
 
 ---
